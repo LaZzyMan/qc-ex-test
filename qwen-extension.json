@@ -1,6 +1,6 @@
 {
   "name": "zz-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "mcpServers": {
     "nodeServer": {
       "command": "node",
@@ -8,7 +8,7 @@
       "cwd": "${extensionPath}"
     }
   },
-  "excludeTools": ["ListFiles"],
+  "excludeTools": ["ListFiles", "Shell"],
   "settings": [
     {
       "name": "ZZ API Key",
@@ -28,5 +28,5 @@
       "sensitive": false
     }
   ],
-  "contextFileName": ["${extensionPath}${/}QWEN.md", "${extensionPath}${/}context-2.md"]
+  "contextFileName": ["${extensionPath}${/}QWEN.md"]
 }
