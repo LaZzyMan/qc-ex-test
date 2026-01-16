@@ -1,0 +1,26 @@
+{
+  "name": "zz-test",
+  "version": "1.0.0",
+  "mcpServers": {
+    "nodeServer": {
+      "command": "node",
+      "args": ["${extensionPath}${/}dist${/}example.js"],
+      "cwd": "${extensionPath}"
+    }
+  },
+  "excludeTools": ["ListFiles"],
+  "settings": [
+    {
+      "name": "ZZ API Key",
+      "description": "Your API key for ZZ TEST.",
+      "envVar": "ZZ_API_KEY"
+    },
+    {
+      "name": "ZZ API Key Sensitive",
+      "description": "Your API key for ZZ TEST.",
+      "envVar": "ZZ_API_KEY_SENSITIVE",
+      "sensitive": true
+    }
+  ],
+  "contextFileName": ["${extensionPath}${/}QWEN.md", "${extensionPath}${/}context-2.md"]
+}
