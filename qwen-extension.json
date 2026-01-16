@@ -1,6 +1,6 @@
 {
   "name": "zz-test",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "mcpServers": {
     "nodeServer": {
       "command": "node",
@@ -20,6 +20,12 @@
       "description": "Your API key for ZZ TEST.",
       "envVar": "ZZ_API_KEY_SENSITIVE",
       "sensitive": true
+    },
+    {
+      "name": "ZZ API Key ADDITION",
+      "description": "Your API key for ZZ TEST.",
+      "envVar": "ZZ_API_KEY_ADDITION",
+      "sensitive": false
     }
   ],
   "contextFileName": ["${extensionPath}${/}QWEN.md", "${extensionPath}${/}context-2.md"]
